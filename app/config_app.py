@@ -146,7 +146,7 @@ def dog_breed_prediction(img_path):
         pred_vector = Resnet50_model.predict(bottleneck_features)
     
     # Return dog breed name
-    with open("dog_names.json", "r") as f:
+    with open("app/dog_names.json", "r") as f:
         dog_names = json.load(f)
 
     return ' '.join(dog_names[np.argmax(pred_vector)].split(".")[-1].split("_"))
@@ -170,10 +170,10 @@ def classify_image(img_path):
     # Classify image
     
     if dog_detector(img_path):
-        return f"Looks like this is a {dog_breed_name} dog"
+        return f"It appears that the dog in the photo is a {dog_breed_name}"
     
     elif face_detector(img_path):
-        return f"Looks like this is a human that looks like a {dog_breed_name}"
+        return f"It appears that you provided a photo of a human that resembles a {dog_breed_name}"
     
     else:
-        return "Ooops, looks like you haven't provided an image of a dog or a human. Please provide a different image"
+        return "Ooops, you haven't provided an image of a dog or a human. Please provide a different image"
