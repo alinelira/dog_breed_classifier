@@ -23,7 +23,7 @@ Below are some examples of how the web app works.
 
 ## Model Performance <a name="model"></a>
 
-The model was trained using transfering learning from ResNet-60 bottleneck features. The summary of the model architecture is shown below. 
+The CNN model was trained using transfering learning from ResNet-60 bottleneck features. The summary of the model architecture is shown below. 
 
 ![image](https://user-images.githubusercontent.com/48845915/226147255-36cfc774-052f-4236-bc81-2b1a72b6290c.png)
 
