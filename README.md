@@ -25,11 +25,11 @@ The CNN model was trained using transfering learning from ResNet-50 bottleneck f
 
 ![image](https://user-images.githubusercontent.com/48845915/229266918-102955d7-ea31-4c75-ae87-939ae25b43ee.png)
 
-The model achieved 78% of accuracy on the test sample, and below are the training/validation accuracy and loss plots.
+The model achieved 77% of accuracy on the test sample, and below are the training/validation accuracy and loss plots.
 
-![image](https://user-images.githubusercontent.com/48845915/229266312-376f1acf-933c-48cb-87ef-639a1eeaba87.png)
+![image](https://user-images.githubusercontent.com/48845915/229270316-7b66178f-a733-41e1-9182-132f1260a333.png)
 
-![image](https://user-images.githubusercontent.com/48845915/229266346-19892fd0-4040-4f3b-8496-7e72430d90fb.png)
+![image](https://user-images.githubusercontent.com/48845915/229270401-823c5f21-c0dd-4258-aaeb-03dd99e25403.png)
 
 Although the model performed satisfactorily, we could consider the following strategies to improve its performance:
 
