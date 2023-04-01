@@ -9,9 +9,7 @@
 
 ## Project Overview <a name="overview"></a>
 
-This project consists of building a Convolutional Neural Network (CNN) pipeline to analyze user-provided images. The goal is to identify the breed of a dog when given an image of one, and to identify the resembling dog breed when given an image of a person.
-
-Additionally, a  web app was created to receive an image as input and the output will be the dog breed (if the image provided is a dog) or resembling dog breed (if the image provided is a human).
+This project consists of building a Convolutional Neural Network (CNN) pipeline capable of identifying the breed of a dog in an image and also identifying the resembling dog breed when given an image of a person. In addition to the CNN pipeline, a web app was created to receive an image as input and output the dog breed (if the image provided is of a dog) or the resembling dog breed (if the image provided is of a human).
 
 Below are some examples of how the web app works.
 
@@ -23,16 +21,21 @@ Below are some examples of how the web app works.
 
 ## Model Performance <a name="model"></a>
 
-The CNN model was trained using transfering learning from ResNet-60 bottleneck features. The summary of the model architecture is shown below. 
+The CNN model was trained using transfering learning from ResNet-50 bottleneck features and the summary of the model architecture is shown below. 
 
-![image](https://user-images.githubusercontent.com/48845915/226147255-36cfc774-052f-4236-bc81-2b1a72b6290c.png)
+![image](https://user-images.githubusercontent.com/48845915/229266918-102955d7-ea31-4c75-ae87-939ae25b43ee.png)
 
+The model achieved 78% of accuracy on the test sample, and below are the training/validation accuracy and loss plots.
 
-Some suggestions to improve the model accuracy:
+![image](https://user-images.githubusercontent.com/48845915/229266312-376f1acf-933c-48cb-87ef-639a1eeaba87.png)
 
-- Increase the size of the training dataset to covers a wide range of dog breeds with different poses and colors
-- Fine-tune the CNN architecture (add more layers)
-- Augment the training dataset with data augmentation techniques such as flipping, rotating, and scaling
+![image](https://user-images.githubusercontent.com/48845915/229266346-19892fd0-4040-4f3b-8496-7e72430d90fb.png)
+
+Although the model performed satisfactorily, we could consider the following strategies to improve its performance:
+
+- Increasing the size of the training dataset to covers a wide range of dog breeds with different poses and colors
+- Refining the CNN architecture by adding additional layers
+- Applying data augmentation techniques, like flipping, rotating, and scaling to the training dataset
 
 ## Files <a name="files"></a>
 
