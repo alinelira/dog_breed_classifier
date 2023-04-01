@@ -4,7 +4,7 @@ h5py==2.10.0
 wheel==0.38.4
 pillow==9.3.0
 Flask==2.2.3
-Keras==2.0.2
+Keras==2.0.9
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.2
 tensorflow==1.13.1
